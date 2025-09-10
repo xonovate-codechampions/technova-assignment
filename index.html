@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    button {
+      padding: 0.7rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #0077ff;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .header-cta button {
+      background: #0077ff;
+      color: #fff;
+    }
+
+    /* Hero */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 5rem 2rem;
+      background: linear-gradient(to right, #0077ff, #00c6ff);
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background: #fff;
+      color: #0077ff;
+    }
+
+    /* Features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 4rem 5%;
+    }
+
+    .feature {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .feature h3 {
+      margin-bottom: 1rem;
+      color: #0077ff;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      background: #fafafa;
+      padding: 4rem 5%;
+    }
+
+    .testimonials h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .testimonial-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .testimonial {
+      flex: 0 0 300px;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .testimonial span {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #0077ff;
+    }
+
+    /* CTA Section */
+    .cta {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: #0077ff;
+      color: #fff;
+    }
+
+    .cta button {
+      background: #fff;
+      color: #0077ff;
+      margin-top: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      padding: 2rem 5%;
+      background: #333;
+      color: #eee;
+    }
+
+    footer h4 {
+      margin-bottom: 1rem;
+    }
+
+    footer ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer a {
+      color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">TechNova</div>
+    <nav>
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-cta">
+      <button>Get Started</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Powerful Tools for Growing Businesses</h1>
+    <p>TechNova helps you streamline workflows, manage teams, and scale faster with our all-in-one platform.</p>
+    <button>Start Free Trial</button>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">
+      <h3>Collaboration</h3>
+      <p>Work together in real-time with team chat, task management, and file sharing all in one place.</p>
+    </div>
+    <div class="feature">
+      <h3>Analytics</h3>
+      <p>Track progress and make smarter decisions with advanced analytics and visual dashboards.</p>
+    </div>
+    <div class="feature">
+      <h3>Automation</h3>
+      <p>Save time by automating repetitive tasks and focusing on what matters most—growing your business.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-list">
+      <div class="testimonial">
+        <p>“TechNova transformed how our team collaborates. We’re more productive than ever!”</p>
+        <span>- Sarah, Project Manager</span>
+      </div>
+      <div class="testimonial">
+        <p>“The analytics tools give us insights that directly boost our sales performance.”</p>
+        <span>- James, Sales Director</span>
+      </div>
+      <div class="testimonial">
+        <p>“Automation features saved us countless hours every week. Highly recommend!”</p>
+        <span>- Linda, Startup Founder</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Ready to Scale Your Business?</h2>
+    <p>Join thousands of companies using TechNova to accelerate growth.</p>
+    <button>Get Started Today</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Product</h4>
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Integrations</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
